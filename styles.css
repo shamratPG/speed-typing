@@ -103,10 +103,40 @@ body {
   display: none;
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title {
   text-align: center;
   color: white;
   margin: 20px 0;
+}
+
+.blog-title {
+  color: white;
+  font-weight: 500;
+}
+
+.blog {
+  color: white;
+  font-weight: 500;
+  margin: 20px 0;
+  padding: 20px 20px 0 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.blog:hover {
+  font-weight: 600;
+}
+
+.blog-text {
+  color: white;
+  padding: 20px 20px 0 0;
+  font-size: 1.1rem;
 }
 
 .divider-container {
