@@ -30,6 +30,7 @@ body {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 #display {
@@ -37,12 +38,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  padding: 0 3rem;
   color: white;
   font-size: 32px;
   background-color: #171717;
   border: 2px solid #9dffad;
   border-radius: 15px;
+  overflow: auto;
 }
 
 #countdown {
