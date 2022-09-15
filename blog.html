@@ -18,16 +18,71 @@
         <a class="blog" href="./blog.html">Blog</a>
     </div>
     <main>
-        <article class="box-container">
+        <!-- Difference between local and session storage -->
+        <article class="box-container blog-card">
             <h2 class="blog-title">
-                Local Storage:
+                Difference Between Local Storage and Session Storage
             </h2>
+
             <p class="blog-text">
+                <b>Local Storage:</b>
                 This read-only interface property provides access to the Document’s local storage object, the stored
                 data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets
                 cleared when the page session ends – that is when the page is closed. It is cleared when the last
                 “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or
                 incognito session).
+            </p>
+            <p class="blog-text">
+                <b>Session Storage:</b>
+                Session Storage objects can be accessed using the sessionStorage read-only property. The difference
+                between sessionStorage and localStorage is that localStorage data does not expire, whereas
+                sessionStorage data is cleared when the page session ends.
+                A unique page session gets created once a document is loaded in a browser tab. Page sessions are valid
+                for only one tab at a time. Pages are only saved for the amount of time that the tab or the browser is
+                open; they do not persist after the page reloads and restores. A new session is created each time a tab
+                or window is opened; this is different from session cookies.
+            </p>
+        </article>
+        <!-- Difference between global  and block scope  -->
+        <article class="box-container blog-card">
+            <h2 class="blog-title">
+                Difference Between Global Scope & Block Scope
+            </h2>
+
+            <p class="blog-text">
+                <b>Block Scope:</b>
+                Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+                ES6 introduced two important new JavaScript keywords: let and const.
+                These two keywords provide Block Scope in JavaScript.
+                Variables declared with the var keyword can NOT have block scope.
+
+                Variables declared inside a { } block can be accessed from outside the block.
+            </p>
+            <p class="blog-text">
+                <b>Local Scope:</b>
+                Variables declared within a JavaScript function, become LOCAL to the function.
+                Since local variables are only recognized inside their functions, variables with the same name can be
+                used in different functions.
+
+                Local variables are created when a function starts, and deleted when the function is completed.
+            </p>
+        </article>
+        <article class="box-container blog-card">
+            <h2 class="blog-title">
+                Event Loop in JavaScript
+            </h2>
+
+            <p class="blog-text">
+                JavaScript has a runtime model based on an event loop, which is responsible for executing the code,
+                collecting and processing events, and executing queued sub-tasks. This model is quite different from
+                models in other languages like C and Java.
+                Note that the arguments and local variables may continue to exist, as they are stored outside the stack
+                — so they can be accessed by any nested functions long after their outer function has returned.
+            </p>
+            <p class="blog-text">
+                <b> Runtime concepts:</b>
+                The following sections explain a theoretical model. Modern JavaScript engines implement and heavily
+                optimize the described semantics.
             </p>
         </article>
     </main>
